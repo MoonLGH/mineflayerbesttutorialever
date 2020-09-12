@@ -1,4 +1,4 @@
-      }else if (command  == "forward") {
+```}else if (command  == "forward") {
   bot.setControlState('forward', true)
   const MoForw = new D.MessageEmbed()
       .setDescription(`:white_check_mark: Im Moving forward To Stop Do -stop`)
@@ -28,21 +28,5 @@
       .setDescription(`:white_check_mark: Im Moving Right To Stop Do -stop`)
       .setColor(color)
   msg.channel.send(MoRight)
-}else if (command  == "help" ) {
-const help = new D.MessageEmbed()
-.setTitle(`Help`)
-.addField(` ${prefix}sudo (Chat) `, 'To Get The bot say what you want')
-.addField(` ${prefix}movement `, 'Look At Movement command')
-.setColor(color)
-msg.channel.send(help)
-}else if (command  == "movement" ) {
-const movement = new D.MessageEmbed()
-.setTitle(`Movement Command`)
-.addField(` ${prefix}forward `, 'To Move Forward')
-.addField(` ${prefix}backward `, 'To Move Backward')
-.addField(` ${prefix}left `, 'To Move Left')
-.addField(` ${prefix}right `, 'To Move Right')
-.addField(` ${prefix}stop `, 'To Stop')
-.setColor(color)
-msg.channel.send(movement)
 }
+```
