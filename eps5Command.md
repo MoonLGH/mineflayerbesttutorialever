@@ -1,0 +1,48 @@
+      }else if (command  == "forward") {
+  bot.setControlState('forward', true)
+  const MoForw = new D.MessageEmbed()
+      .setDescription(`:white_check_mark: Im Moving forward To Stop Do -stop`)
+      .setColor(color)
+  msg.channel.send(MoForw)
+}else if (command  == "backward") {
+  bot.setControlState('back', true)
+  const MoBackw = new D.MessageEmbed()
+      .setDescription(`:white_check_mark: Im Moving backward To Stop Do -stop`)
+      .setColor(color)
+  msg.channel.send(MoBackw)
+}else if (command  == "stop") {
+  bot.clearControlStates()
+  const MoStop = new D.MessageEmbed()
+      .setDescription(`:white_check_mark: Stopped!`)
+      .setColor(color)
+  msg.channel.send(MoStop)
+}else if (command  == "left") {
+  bot.setControlState('left', true)
+  const MoLeft = new D.MessageEmbed()
+      .setDescription(`:white_check_mark: Im Moving left To Stop Do -stop`)
+      .setColor(color)
+  msg.channel.send(MoLeft)
+}else if (command  == "right") {
+  bot.setControlState('right', true)
+  const MoRight = new D.MessageEmbed()
+      .setDescription(`:white_check_mark: Im Moving Right To Stop Do -stop`)
+      .setColor(color)
+  msg.channel.send(MoRight)
+}else if (command  == "help" ) {
+const help = new D.MessageEmbed()
+.setTitle(`Help`)
+.addField(` ${prefix}sudo (Chat) `, 'To Get The bot say what you want')
+.addField(` ${prefix}movement `, 'Look At Movement command')
+.setColor(color)
+msg.channel.send(help)
+}else if (command  == "movement" ) {
+const movement = new D.MessageEmbed()
+.setTitle(`Movement Command`)
+.addField(` ${prefix}forward `, 'To Move Forward')
+.addField(` ${prefix}backward `, 'To Move Backward')
+.addField(` ${prefix}left `, 'To Move Left')
+.addField(` ${prefix}right `, 'To Move Right')
+.addField(` ${prefix}stop `, 'To Stop')
+.setColor(color)
+msg.channel.send(movement)
+}
